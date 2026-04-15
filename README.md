@@ -3,9 +3,9 @@
 ## Project Overview
 This project is a FastAPI-based backend system that analyzes sentiment around SEC insider trading activity.
 
-It simulates:
+The system simulates:
 - Insider trading data (top trades by value)
-- Tweet sentiment for related tickers
+- Tweet sentiment for related stock tickers
 - AI-powered responses via a chat interface
 
 ---
@@ -14,19 +14,34 @@ It simulates:
 - Chat endpoint to query sentiment (`/chat`)
 - Sentiment visualization chart (`/chart`)
 - Health check endpoint (`/health`)
-- OpenRouter LLM integration (optional)
-- Modular and scalable architecture
+- Optional OpenRouter LLM integration
+- Modular and scalable backend architecture
 
 ---
 
 ## Tech Stack
 - Python
 - FastAPI
-- OpenRouter (LLM)
+- OpenRouter (LLM - optional)
 - Matplotlib
 - Apify (planned integration)
 
 ---
+
+## Architecture
+- FastAPI handles API requests and routing
+- services.py:
+  - Processes insider trading data
+  - Performs sentiment analysis on tweets
+- models.py:
+  - Defines request and response schemas
+- Chart endpoint:
+  - Generates sentiment visualization using Matplotlib
+- LLM Integration (optional):
+  - Enhances responses using OpenRouter API
+
+---
+
 
 ## Project Structure
 ```
