@@ -29,11 +29,12 @@ It simulates:
 ---
 
 ## Project Structure
+```
 app/
 ├── main.py # FastAPI app & routes
 ├── models.py # Request/Response models
 ├── services.py # Data + sentiment logic
-
+```
 
 ---
 
@@ -74,12 +75,10 @@ Ask questions about sentiment
   "question": "What is sentiment for TSLA?"
 }
 
-GET /chart
-
+### GET /chart
 Returns sentiment chart for top tickers
 
-GET /health
-
+### GET /health
 Check system status
 
 {
@@ -89,6 +88,7 @@ Check system status
 }
 
 Notes
+This project uses mock data to simulate SEC insider trading and tweet sentiment due to limited time and API constraints.
 Mock data is used due to time constraints
 Designed for easy integration with:
 SEC APIs
