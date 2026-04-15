@@ -1,11 +1,22 @@
 # SEC Insider Trading Sentiment AI Agent
+An AI-powered backend system that analyzes insider trading activity and market sentiment using FastAPI and LLM integration.
+
+---
+
+## Key Highlights
+- Built scalable FastAPI backend
+- Integrated sentiment analysis pipeline
+- Designed modular architecture for extensibility
+- Supports LLM-based intelligent responses
+
+---
 
 ## Project Overview
 This project is a FastAPI-based backend system that analyzes sentiment around SEC insider trading activity.
 
 The system simulates:
 - Insider trading data (top trades by value)
-- Tweet sentiment for related stock tickers
+- Social media sentiment for related stock tickers
 - AI-powered responses via a chat interface
 
 ---
@@ -80,7 +91,7 @@ http://127.0.0.1:8000/docs
 ---
 ## Use Case
 This system can help:
-- Investors analyze insider trading trends
+- Investors can analyze insider trading trends
 - Detect bullish or bearish sentiment signals
 - Combine trading data with social sentiment insights
 - Build intelligent financial analysis tools
@@ -117,10 +128,10 @@ Check system status
 ---
 
 ### Sample Output
-
+```json
 {
   "answer": "Most recent insider trade: Purchase TSLA...",
-  "source": "mock SEC insider trading data and tweet sentiment",
+  "source": "mock SEC insider trading data and social sentiment",
   "chart_url": "/chart"
 }
 
