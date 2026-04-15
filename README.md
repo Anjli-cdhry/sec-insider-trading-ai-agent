@@ -65,38 +65,40 @@ http://127.0.0.1:8000/docs
 ---
 
 ## API Endpoints
-
 ### POST /chat
+
 Ask questions about sentiment
 
-**Example Request**
-```json
+Example:
 {
   "question": "What is sentiment for TSLA?"
 }
 
+---
+
 ### GET /chart
 Returns sentiment chart for top tickers
+
+---
 
 ### GET /health
 Check system status
 
-{
-  "answer": "Most recent insider trade: Purchase TSLA...",
-  "source": "mock SEC insider trading data and tweet sentiment",
-  "chart_url": "/chart"
-}
+---
 
-Notes
-This project uses mock data to simulate SEC insider trading and tweet sentiment due to limited time and API constraints.
-Mock data is used due to time constraints
-Designed for easy integration with:
-SEC APIs
-Apify Twitter scraping
-Scalable for real-world deployment
+## Notes
 
-Future Improvements
-Integrate real SEC EDGAR data
-Use Apify for live tweet scraping
-Add vector database for RAG
-Implement Hermes multi-agent workflow
+- This project uses mock data due to time constraints  
+- Designed for easy integration with:
+  - SEC APIs  
+  - Apify Twitter scraping  
+- Scalable for real-world deployment  
+
+---
+
+## Future Improvements
+
+- Integrate real SEC EDGAR data  
+- Use Apify for live tweet scraping  
+- Add vector database for RAG  
+- Implement multi-agent workflow  
