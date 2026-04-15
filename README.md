@@ -134,6 +134,7 @@ Check system status
   "source": "mock SEC insider trading data and social sentiment",
   "chart_url": "/chart"
 }
+```json
 
 ---
 
