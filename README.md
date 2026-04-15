@@ -29,12 +29,12 @@ The system simulates:
 ---
 
 ## Architecture
-- FastAPI handles API requests and routing
+- FastAPI handles API routing and request management
 - services.py:
   - Processes insider trading data
-  - Performs sentiment analysis on tweets
+  - Performs sentiment analysis on social data
 - models.py:
-  - Defines request and response schemas
+  - Defines request and response schemas using Pydantic
 - Chart endpoint:
   - Generates sentiment visualization using Matplotlib
 - LLM Integration (optional):
@@ -78,6 +78,21 @@ http://127.0.0.1:8000/docs
 
 
 ---
+## Use Case
+This system can help:
+- Investors analyze insider trading trends
+- Detect bullish or bearish sentiment signals
+- Combine trading data with social sentiment insights
+- Build intelligent financial analysis tools
+
+---
+
+## Limitations
+- Uses mock data instead of real SEC filings
+- Social sentiment is simulated
+- Not suitable for real financial decisions without real data integration
+
+---
 
 ## API Endpoints
 ### POST /chat
@@ -101,10 +116,20 @@ Check system status
 
 ---
 
+### Sample Output
+
+{
+  "answer": "Most recent insider trade: Purchase TSLA...",
+  "source": "mock SEC insider trading data and tweet sentiment",
+  "chart_url": "/chart"
+}
+
+---
+
 ## Notes
 
 - This project uses mock data due to time constraints  
-- Designed for easy integration with:
+- Designed for easy integration with external data sources:
   - SEC APIs  
   - Apify Twitter scraping  
 - Scalable for real-world deployment  
